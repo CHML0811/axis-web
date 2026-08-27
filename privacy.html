@@ -26,59 +26,92 @@
 </head>
 <body>
 <main>
-  <h1>AXIS — Privacy Policy</h1>
-  <p class="sub">Effective <span class="ph">[EFFECTIVE DATE]</span> · Last updated <span class="ph">[DATE]</span></p>
 
-  <p>AXIS is built on a simple principle: your attention and your data are yours. We collect the least we can, we never sell it, and we never use it to track you across other apps or the web. This policy explains exactly what we collect, why, and your choices.</p>
+  <h1>AXIS Privacy Policy</h1>
+  <p class="sub">Effective 27 August 2026 &middot; Last updated 27 August 2026</p>
 
-  <hr class="rule">
+  <p>AXIS collects the least it can, never sells your data, and never tracks you
+  across other apps or the web. This policy describes what actually leaves your
+  device, based on what the app and its backend really do.</p>
 
   <h2>Who we are</h2>
-  <p>AXIS is operated by <span class="ph">[LEGAL ENTITY / YOUR NAME]</span> (&ldquo;AXIS,&rdquo; &ldquo;we,&rdquo; &ldquo;us&rdquo;). Contact: <a href="mailto:privacy@axis.app"><span class="ph">privacy@axis.app</span></a>.</p>
+  <p>AXIS is operated by Leo Chan. Contact:
+  <a href="mailto:CONTACT_EMAIL_PLACEHOLDER"><span class="ph">[YOUR CONTACT EMAIL]</span></a>.</p>
 
   <h2>What we collect and why</h2>
   <table>
     <tr><th>Data</th><th>Why</th><th>Linked to you?</th></tr>
-    <tr><td>Email address (only if you link an account)</td><td>Cross-device sync of your plans and progress</td><td>Yes</td></tr>
-    <tr><td>Anonymous account ID (generated on first launch)</td><td>Stores your data so it isn&rsquo;t lost; enables sync</td><td>Yes</td></tr>
-    <tr><td>Purchase history (via RevenueCat / Apple)</td><td>Unlock and restore your AXIS Pro subscription</td><td>Yes</td></tr>
-    <tr><td>Crash diagnostics (via Sentry)</td><td>Find and fix crashes — device type, OS, app version only</td><td>No</td></tr>
-    <tr><td>Feature-usage events</td><td>Understand which features are used, to improve the app</td><td>No</td></tr>
+    <tr><td>Email address (only if you create an account)</td><td>Sign-in and cross-device sync</td><td>Yes</td></tr>
+    <tr><td>Account ID (generated on first launch)</td><td>Stores your data so it is not lost</td><td>Yes</td></tr>
+    <tr><td>Your goals, plans, reflections and journal entries</td><td>Generating and improving your plans</td><td>Yes</td></tr>
+    <tr><td>Sleep debt, derived from Apple Health</td><td>Scheduling work when you can actually do it</td><td>Yes</td></tr>
+    <tr><td>Purchase history (RevenueCat and Apple)</td><td>Unlocking and restoring AXIS Pro</td><td>Yes</td></tr>
+    <tr><td>Feature-usage events</td><td>Understanding which features get used</td><td>Yes</td></tr>
+    <tr><td>Crash and performance diagnostics (Sentry)</td><td>Finding and fixing crashes</td><td>No</td></tr>
   </table>
 
-  <h2>Health &amp; fitness data (stays on your device)</h2>
-  <p>If you grant permission, AXIS reads your <strong>sleep analysis</strong> and <strong>sleeping wrist temperature</strong> from Apple Health to calculate your sleep debt, and uses <strong>step count</strong> from Core Motion for the Wake Mission. This data is processed on your device and is <strong>never uploaded to our servers</strong>, never shared, and never used for advertising or tracking. You can revoke access anytime in the Health app or iOS Settings.</p>
+  <h2>Your written content is stored, not just processed</h2>
+  <p>When you use an AI feature, the text you wrote and the prompt built from it
+  are sent to our backend, passed to a third-party language-model provider to
+  produce a result, and <strong>stored in our database against your account
+  identifier</strong>. We keep it so plans can reference your history and so we can
+  investigate bad output.</p>
+  <p>This means the content of your goals, reflections and journal entries is
+  retained by us, not only by the model provider. Deleting your account deletes
+  it.</p>
+
+  <h2>Health data</h2>
+  <p>If you grant permission, AXIS reads sleep analysis from Apple Health and step
+  count from Core Motion. The raw Health records stay on your device. The
+  <strong>sleep-debt figure derived from them is sent to our backend</strong> and
+  stored with your account, because the planner needs it to schedule your day.</p>
+  <p>Health data is never used for advertising and never shared with anyone
+  outside the providers listed below. Revoke access anytime in the Health app or
+  iOS Settings.</p>
+
+  <h2>Voice input</h2>
+  <p>Where AXIS lets you speak instead of type, transcription uses Apple's speech
+  recognition. Depending on your device and language, Apple may process that audio
+  on its servers. AXIS never receives or stores the audio itself, only the
+  resulting text, which is then treated like anything else you write.</p>
 
   <h2>What we never do</h2>
   <ul>
     <li>We do not sell your personal data.</li>
     <li>We do not track you across other apps or websites.</li>
-    <li>We do not use your health data for advertising or share it with any third party.</li>
+    <li>We do not use your health data for advertising.</li>
     <li>We do not show third-party ads in AXIS.</li>
   </ul>
 
   <h2>Third parties who process data for us</h2>
-  <p>We use a small set of service providers strictly to operate the app: <strong>Apple</strong> (in-app purchases, HealthKit — on device), <strong>Firebase</strong> (authentication and sync), <strong>RevenueCat</strong> (subscription management), and <strong>Sentry</strong> (crash reporting). Each processes only the data described above, on our behalf.</p>
+  <p>Apple (in-app purchases, Health, speech recognition), Google Firebase
+  (authentication, database, hosting of our backend), Anthropic (the language
+  model behind AI features), RevenueCat (subscription management) and Sentry
+  (crash reporting). Each processes only the data described above, on our behalf.</p>
 
-  <h2>AI features</h2>
-  <p>When you use AI planning, the goal text you provide is sent to our backend and to a third-party large-language-model provider solely to generate your plan. We do not send your health data, identity, or contacts to the model.</p>
-
-  <h2>Data retention &amp; deletion</h2>
-  <p>We keep your account data while your account is active. You can delete your account and associated data at any time from <strong>Settings → Account → Delete account</strong>, or by emailing <a href="mailto:privacy@axis.app"><span class="ph">privacy@axis.app</span></a>. Deletion is permanent.</p>
+  <h2>Retention and deletion</h2>
+  <p>We keep your account data, including stored AI inputs and outputs, while your
+  account exists. Deleting your account deletes that data permanently. Request
+  deletion in the app or by email.</p>
 
   <h2>Your rights</h2>
-  <p>Depending on where you live (e.g. GDPR in the EU/UK, CCPA in California), you may have the right to access, correct, export, or delete your personal data, and to object to certain processing. To exercise any of these, email <a href="mailto:privacy@axis.app"><span class="ph">privacy@axis.app</span></a>. We do not sell data, so there is nothing to opt out of on that front.</p>
+  <p>Depending on where you live, including under GDPR in the EU and UK and the
+  CCPA in California, you may have the right to access, correct, export or delete
+  your personal data and to object to certain processing. Email us to exercise
+  any of them. We do not sell data, so there is nothing to opt out of there.</p>
 
   <h2>Children</h2>
-  <p>AXIS is not directed at children under 13 (or the minimum age in your country) and we do not knowingly collect their data.</p>
+  <p>AXIS is not directed at children under 13, or the minimum age where you live,
+  and we do not knowingly collect their data.</p>
 
   <h2>Changes</h2>
-  <p>If we change this policy, we&rsquo;ll update the date above and, for material changes, notify you in the app.</p>
+  <p>If this policy changes we will update the date above and, for material
+  changes, tell you in the app.</p>
 
   <footer>
-    AXIS · <a href="/support">Support</a> · <a href="mailto:privacy@axis.app"><span class="ph">privacy@axis.app</span></a><br>
-    Replace every <span class="ph">[bracketed]</span> value and have counsel review before publishing.
+    AXIS &middot; <a href="support.html">Support</a>
   </footer>
+
 </main>
 </body>
 </html>
