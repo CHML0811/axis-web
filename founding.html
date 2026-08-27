@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AXIS Founding Members</title>
+<meta name="description" content="500 founding seats. One payment of $49.99 for AXIS Pro, for good.">
+<meta property="og:title" content="AXIS Founding Members">
+<meta property="og:description" content="500 founding seats. One payment of $49.99 for AXIS Pro, for good.">
+<meta property="og:image" content="https://chml0811.github.io/axis-web/img/wordmark.png">
+<style>
+  /* Single dark theme, locked. AXIS is a 90% black brand; a light mode would
+     misrepresent the product. Deliberate commitment, not an omission. */
+  :root {
+    --ink:      #070708;
+    --raise:    #101013;
+    --line:     #23232a;
+    --paper:    #EDEBE6;
+    --muted:    #8C8A86;
+    --shu:      #BC3B2E;
+
+    --serif: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, monospace;
+
+    --pad: clamp(1.25rem, 5vw, 4rem);
+    --radius: 2px;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--ink);
+    color: var(--paper);
+    font-family: var(--sans);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 1180px; margin: 0 auto; padding-inline: var(--pad); }
+
+  a { color: inherit; }
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--shu);
+    outline-offset: 3px;
+  }
+
+  /* ---------- masthead ---------- */
+  .top {
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 20;
+    background: color-mix(in srgb, var(--ink) 92%, transparent);
+    backdrop-filter: blur(8px);
+  }
+  .top__in {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 1rem; height: 64px;
+  }
+  .mark {
+    font-family: var(--serif); font-size: 1.15rem;
+    letter-spacing: .22em; text-decoration: none;
+  }
+  .mark b { color: var(--shu); font-weight: inherit; }
+  .top__seats { font-family: var(--mono); font-size: .72rem; color: var(--muted); letter-spacing: .08em; }
+
+  /* ---------- hero: asymmetric split ---------- */
+  .hero { padding-block: clamp(2.5rem, 7vw, 5.5rem) clamp(3rem, 8vw, 6rem); }
+  .hero__grid {
+    display: grid; gap: clamp(2rem, 5vw, 4.5rem);
+    grid-template-columns: 1.15fr .85fr; align-items: center;
+  }
+  .eyebrow {
+    font-family: var(--mono); font-size: .72rem; letter-spacing: .2em;
+    text-transform: uppercase; color: var(--shu); margin: 0 0 1.25rem;
+  }
+  h1 {
+    font-family: var(--serif); font-weight: 400;
+    font-size: clamp(2.4rem, 5.4vw, 4rem); line-height: 1.08;
+    letter-spacing: -.02em; margin: 0 0 1.25rem; text-wrap: balance;
+  }
+  h1 i { font-style: italic; color: var(--shu); line-height: 1.1; padding-bottom: 1px; }
+  .lede { color: var(--muted); font-size: 1.05rem; max-width: 46ch; margin: 0 0 2rem; }
+  .cta {
+    display: inline-flex; align-items: center; justify-content: center;
+    background: var(--shu); color: #fff; text-decoration: none;
+    font-family: var(--mono); font-size: .82rem; letter-spacing: .1em;
+    text-transform: uppercase; white-space: nowrap;
+    padding: 1rem 1.9rem; border: 1px solid var(--shu); border-radius: var(--radius);
+    transition: transform .16s ease, background .16s ease;
+  }
+  .cta:hover { background: #a53226; }
+  .cta:active { transform: translateY(1px); }
+  .cta--ghost { background: transparent; color: var(--paper); border-color: var(--line); }
+  .cta--ghost:hover { background: var(--raise); }
+  .hero__actions { display: flex; flex-wrap: wrap; gap: .75rem; }
+
+  .shot {
+    width: 100%; height: auto; display: block;
+    border: 1px solid var(--line); border-radius: 14px;
+  }
+
+  /* ---------- price: full-width statement ---------- */
+  .price { border-block: 1px solid var(--line); background: var(--raise); }
+  .price__in {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: clamp(1.5rem, 4vw, 3rem); padding-block: clamp(2.5rem, 6vw, 4rem);
+  }
+  .fig__n {
+    font-family: var(--serif); font-size: clamp(2.2rem, 5vw, 3.2rem);
+    line-height: 1; color: var(--shu); font-variant-numeric: tabular-nums;
+  }
+  .fig__l { color: var(--muted); font-size: .92rem; margin-top: .55rem; }
+
+  /* ---------- included: bento with visual cells ---------- */
+  .sec { padding-block: clamp(3rem, 7vw, 5.5rem); }
+  h2 {
+    font-family: var(--serif); font-weight: 400;
+    font-size: clamp(1.7rem, 3.6vw, 2.4rem); line-height: 1.2;
+    letter-spacing: -.015em; margin: 0 0 2rem; text-wrap: balance;
+  }
+  .bento {
+    display: grid; gap: 1px; background: var(--line);
+    border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .cell { background: var(--ink); padding: 1.6rem 1.5rem; }
+  .cell h3 { font-size: 1rem; margin: 0 0 .5rem; font-weight: 600; }
+  .cell p { margin: 0; color: var(--muted); font-size: .94rem; }
+  .cell--wide { grid-column: span 2; }
+  /* The reel still carries its own caption, so it is shown clean with no
+     overlay text competing against it. */
+  .cell--art { padding: 0; min-height: 260px; }
+  .cell--art img {
+    width: 100%; height: 100%; min-height: 260px;
+    object-fit: cover; object-position: 50% 62%; display: block;
+  }
+  .cell--brand {
+    background: var(--shu); color: #fff; display: flex; align-items: center;
+  }
+  .cell--brand p { color: rgba(255,255,255,.9); }
+
+  /* ---------- status: plain prose ---------- */
+  .prose { max-width: 62ch; }
+  .prose p { color: var(--muted); }
+  .prose strong { color: var(--paper); font-weight: 600; }
+  .note {
+    border-left: 2px solid var(--shu); padding: .2rem 0 .2rem 1.1rem;
+    margin-top: 1.75rem; color: var(--muted); font-size: .95rem;
+  }
+
+  /* ---------- what happens next: verb steps, no "Step 1" ---------- */
+  .steps { display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .step { background: var(--ink); padding: 1.5rem; display: grid; grid-template-columns: 8rem 1fr; gap: 1.25rem; }
+  .step__k { font-family: var(--mono); font-size: .74rem; letter-spacing: .12em; text-transform: uppercase; color: var(--shu); padding-top: .2rem; }
+  .step p { margin: 0; color: var(--muted); font-size: .95rem; }
+
+  /* ---------- close ---------- */
+  .close { border-top: 1px solid var(--line); text-align: center; }
+  .close h2 { margin-bottom: 1rem; }
+  .close p { color: var(--muted); max-width: 44ch; margin: 0 auto 2rem; }
+
+  footer { border-top: 1px solid var(--line); padding-block: 2rem 3rem; }
+  .foot__in { display: flex; flex-wrap: wrap; gap: 1rem 2rem; justify-content: space-between; color: var(--muted); font-size: .85rem; }
+  .foot__in a { color: var(--muted); }
+
+  /* ---------- motion: entry only, motivated by hierarchy ---------- */
+  @media (prefers-reduced-motion: no-preference) {
+    .rise { opacity: 0; transform: translateY(14px); animation: rise .7s cubic-bezier(.16,1,.3,1) forwards; }
+    .rise:nth-child(2) { animation-delay: .08s; }
+    .rise:nth-child(3) { animation-delay: .16s; }
+    @keyframes rise { to { opacity: 1; transform: none; } }
+  }
+
+  /* ---------- mobile collapse, explicit ---------- */
+  @media (max-width: 900px) {
+    .hero__grid { grid-template-columns: 1fr; }
+    .hero__art { order: -1; max-width: 320px; }
+    .bento { grid-template-columns: 1fr; }
+    .cell--wide { grid-column: auto; }
+    .step { grid-template-columns: 1fr; gap: .4rem; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top__in">
+    <a class="mark" href="./">A<b>X</b>IS</a>
+    <span class="top__seats">500 founding seats</span>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div>
+        <p class="eyebrow rise">Founding members</p>
+        <h1 class="rise">Pay once. Keep it <i>for good</i>.</h1>
+        <p class="lede rise">AXIS plans your day around your energy, then holds you to it. 500 people get lifetime Pro for a single payment. After that it is $99.99 a year.</p>
+        <div class="hero__actions rise">
+          <a class="cta" href="#claim">Claim a founding seat</a>
+          <a class="cta cta--ghost" href="#status">What you are buying</a>
+        </div>
+      </div>
+      <div class="hero__art">
+        <img class="shot" src="img/app-onboarding.png" alt="AXIS asking who you are trying to become, on a black screen" width="1206" height="2622" loading="eager">
+      </div>
+    </div>
+  </section>
+
+  <section class="price">
+    <div class="wrap price__in">
+      <div>
+        <div class="fig__n">$49.99</div>
+        <div class="fig__l">Once. Not a subscription.</div>
+      </div>
+      <div>
+        <div class="fig__n">500</div>
+        <div class="fig__l">Seats at this price, then it closes.</div>
+      </div>
+      <div>
+        <div class="fig__n">$99.99</div>
+        <div class="fig__l">What everyone else pays, yearly.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec wrap">
+    <h2>What a seat gets you</h2>
+    <div class="bento">
+      <div class="cell cell--wide">
+        <h3>AXIS Pro, permanently</h3>
+        <p>Every Pro feature, on every future version. No renewal, no price rise, nothing to cancel.</p>
+      </div>
+      <div class="cell cell--brand">
+        <p>Founding seats are numbered. Yours does not expire.</p>
+      </div>
+
+      <div class="cell cell--art">
+        <img src="img/night.png" alt="A still from the AXIS film: a man alone at a desk in morning light, captioned another night gone." width="1080" height="1920" loading="lazy">
+      </div>
+      <div class="cell">
+        <h3>Plans built around your energy</h3>
+        <p>AXIS reads your chronotype and sleep debt, then schedules the hard work where you can actually do it.</p>
+      </div>
+      <div class="cell">
+        <h3>First access, and a say</h3>
+        <p>You get every build before the App Store does, and a direct line for what gets built next.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec wrap" id="status">
+    <h2>Read this before you pay</h2>
+    <div class="prose">
+      <p><strong>AXIS is not on the App Store yet.</strong> It is built and it runs. It is going through Apple review, and review takes as long as it takes. Buying a founding seat now is buying early, at a price that will not exist later.</p>
+      <p>You will get in through TestFlight first, on iPhone, before the public release. If you would rather wait until it is live in the store, wait. The seat will not be there, but nobody should buy software on a promise they are uneasy about.</p>
+      <div class="note">
+        If Apple rejects AXIS outright and it never ships, every founding payment is refunded in full. That is the deal, and it is on us, not on you.
+      </div>
+    </div>
+  </section>
+
+  <section class="sec wrap">
+    <h2>What happens after you pay</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step__k">Right away</div>
+        <p>A receipt, your founding number, and the email we will use to find you.</p>
+      </div>
+      <div class="step">
+        <div class="step__k">TestFlight</div>
+        <p>An invite to the build, sent to that address as soon as your seat is registered.</p>
+      </div>
+      <div class="step">
+        <div class="step__k">On release</div>
+        <p>Sign in with the same email and Pro is already unlocked. Nothing to redeem.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec close">
+    <div class="wrap">
+      <h2>500 seats.</h2>
+      <p>One payment, and AXIS is yours for as long as it exists.</p>
+      <p id="claim">
+        <!-- WIRING NOTE (Leo): replace href with the live Gumroad product URL.
+             Nothing here takes payment yet; this button currently goes nowhere. -->
+        <a class="cta" href="#claim" data-checkout="gumroad-pending">Claim a founding seat</a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot__in">
+    <span>AXIS</span>
+    <span>
+      <a href="privacy.html">Privacy</a> &nbsp; <a href="support.html">Support</a>
+    </span>
+  </div>
+</footer>
+
+</body>
+</html>
