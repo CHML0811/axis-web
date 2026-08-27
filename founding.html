@@ -98,6 +98,7 @@
   .cta--ghost:hover { background: var(--raise); }
   .hero__actions { display: flex; flex-wrap: wrap; gap: .75rem; }
 
+  .hero__art { justify-self: end; width: 100%; max-width: 300px; }
   .shot {
     width: 100%; height: auto; display: block;
     border: 1px solid var(--line); border-radius: 14px;
@@ -178,7 +179,7 @@
   /* ---------- mobile collapse, explicit ---------- */
   @media (max-width: 900px) {
     .hero__grid { grid-template-columns: 1fr; }
-    .hero__art { order: -1; max-width: 320px; }
+    .hero__art { order: -1; justify-self: start; max-width: 240px; }
     .bento { grid-template-columns: 1fr; }
     .cell--wide { grid-column: auto; }
     .step { grid-template-columns: 1fr; gap: .4rem; }
@@ -208,7 +209,7 @@
         </div>
       </div>
       <div class="hero__art">
-        <img class="shot" src="img/app-onboarding.png" alt="AXIS asking who you are trying to become, on a black screen" width="1206" height="2622" loading="eager">
+        <img class="shot" src="img/app-goal.png" alt="AXIS asking what one thing you most want to make real in the next 90 days" width="1206" height="2622" loading="eager">
       </div>
     </div>
   </section>
